@@ -1,0 +1,50 @@
+What are Java Streams? Explain their significance.
+How do you create a stream in Java? Provide examples.
+What is the difference between a stream and a collection in Java?
+Explain the different types of streams in Java.
+What is the difference between sequential and parallel streams?
+How do you convert a collection to a stream?
+What are intermediate operations in streams? Provide examples.
+What are terminal operations in streams? Provide examples.
+How does the filter() method work in Java streams?
+What is the purpose of the map() function in streams?
+Explain the flatMap() method and how it differs from map().
+How do you sort a stream of objects?
+Describe how to use the collect() method in streams.
+What is the reduce() method in streams? Give an example.
+How can you limit the number of elements processed in a stream?
+What does the skip() method do in a stream?
+How do you find the maximum or minimum value in a stream?
+Explain how the distinct() method works in streams.
+What is the purpose of the peek() method in streams?
+How do you concatenate two streams in Java?
+What are the advantages of using parallel streams?
+How do you create a parallel stream?
+What are some common pitfalls of using parallel streams?
+Explain how the forEach() method works in streams.
+How can you convert a stream back to a collection?
+Describe how to use the toArray() method in streams.
+How do you handle exceptions in streams?
+What is a Stream.of() method and when would you use it?
+How do you create an infinite stream in Java?
+What are the differences between findFirst() and findAny() methods?
+Explain the use of anyMatch(), allMatch(), and noneMatch() methods.
+How do you join elements of a stream into a single string?
+What are the differences between Iterator and Stream in Java?
+How do you convert an array to a stream?
+What is the purpose of the sorted() method in streams?
+How do you group elements of a stream by a specific criteria?
+Explain the concept of lazy evaluation in streams.
+How do you find the sum of all elements in a stream?
+What is a Stream.Builder and how is it used?
+How do you generate a stream of random numbers?
+What is the use of IntStream, LongStream, and DoubleStream?
+How do you convert a Stream to IntStream, LongStream, or DoubleStream?
+What is the purpose of the boxed() method in streams?
+How do you merge multiple streams into a single stream?
+What is the iterate() method in streams? Provide an example.
+How do you handle stateful operations in parallel streams?
+What is the StreamSupport class and how is it used?
+Explain the Collectors.toList() method and its usage.
+What is the difference between Stream.generate() and Stream.iterate()?
+How do you count the number of elements in a stream?

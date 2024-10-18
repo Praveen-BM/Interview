@@ -1,0 +1,254 @@
+Java Basics
+Which of the following is a valid declaration of a char variable in Java?
+
+A) char ch = 'ab';
+B) char ch = 'a';
+C) char ch = "a";
+D) char ch = 'abc';
+Answer: B
+
+Which of the following is the correct way to declare a constant in Java?
+
+A) constant int MAX = 100;
+B) final int MAX = 100;
+C) static int MAX = 100;
+D) final static int MAX = 100;
+Answer: B
+
+What is the default value of an instance variable in Java of type int?
+
+A) 0
+B) 1
+C) null
+D) Undefined
+Answer: A
+
+Which of the following is true about constructors in Java?
+
+A) Constructors can be overridden.
+B) Constructors can have any return type.
+C) Constructors cannot have a return type.
+D) Constructors are invoked explicitly by the programmer.
+Answer: C
+
+Which method is used to find the length of an array in Java?
+
+A) length()
+B) size()
+C) getSize()
+D) length
+Answer: D
+
+Which of the following is the parent class of all classes in Java?
+
+A) Object
+B) Class
+C) System
+D) Runtime
+Answer: A
+
+Which of the following is NOT a valid access modifier in Java?
+
+A) public
+B) private
+C) protected
+D) friendly
+Answer: D
+
+In Java, String is a:
+
+A) Primitive data type
+B) Abstract class
+C) Final class
+D) Interface
+Answer: C
+
+Which keyword is used to inherit a class in Java?
+
+A) this
+B) extends
+C) implements
+D) super
+Answer: B
+
+Which method is called first when an application starts in Java?
+
+A) start()
+B) init()
+C) run()
+D) main()
+Answer: D
+
+Java Syntax and Control Flow
+Which of the following is the correct way to create an object in Java?
+
+A) ClassName obj = new ClassName();
+B) ClassName obj;
+C) obj = new ClassName();
+D) new ClassName obj();
+Answer: A
+
+How many times will the following loop execute?
+
+java
+Copy code
+for (int i = 0; i < 5; i++) {
+    System.out.println(i);
+}
+A) 4
+B) 5
+C) 6
+D) Infinite
+Answer: B
+
+Which statement is used to skip the current iteration in a loop in Java?
+
+A) skip
+B) continue
+C) break
+D) return
+Answer: B
+
+Which operator is used to check for equality in Java?
+
+A) =
+B) ==
+C) ===
+D) !=
+Answer: B
+
+What will be the output of the following code?
+
+java
+Copy code
+int x = 5;
+System.out.println(x++);
+A) 4
+B) 5
+C) 6
+D) Compilation error
+Answer: B
+
+Java OOP (Object-Oriented Programming)
+Which of the following is not a pillar of Object-Oriented Programming in Java?
+
+A) Inheritance
+B) Encapsulation
+C) Polymorphism
+D) Compilation
+Answer: D
+
+What is method overloading in Java?
+
+A) Defining multiple methods with the same name but different parameters.
+B) Defining multiple methods with the same name and parameters.
+C) Using the same method in multiple classes.
+D) Inheriting methods from a parent class.
+Answer: A
+
+What is the correct way to call the parent class constructor in Java?
+
+A) super()
+B) this()
+C) parent()
+D) constructor()
+Answer: A
+
+Which of the following is used to achieve multiple inheritance in Java?
+
+A) Inheritance
+B) Abstract classes
+C) Interfaces
+D) Polymorphism
+Answer: C
+
+Which keyword is used in Java to prevent a class from being inherited?
+
+A) static
+B) final
+C) abstract
+D) private
+Answer: B
+
+Exception Handling in Java
+Which keyword is used to handle exceptions in Java?
+
+A) catch
+B) throw
+C) try
+D) throws
+Answer: C
+
+Which type of exception must be caught or declared to be thrown in a method?
+
+A) Checked exceptions
+B) Unchecked exceptions
+C) Runtime exceptions
+D) Error
+Answer: A
+
+What is the base class for all exceptions in Java?
+
+A) Object
+B) Throwable
+C) Exception
+D) RuntimeException
+Answer: B
+
+Which block is always executed regardless of whether an exception occurs or not?
+
+A) try
+B) catch
+C) finally
+D) throw
+Answer: C
+
+What happens when an exception is thrown in a method without being caught?
+
+A) The program stops immediately.
+B) The exception is ignored.
+C) The method returns a default value.
+D) The exception propagates up the call stack.
+Answer: D
+
+Java Keywords and Memory Management
+Which keyword is used to free memory in Java explicitly?
+
+A) free
+B) delete
+C) gc
+D) None of the above
+Answer: D
+(Memory in Java is managed by the garbage collector, not explicitly by the programmer.)
+
+Which keyword in Java is used to define a class method that cannot be overridden?
+
+A) private
+B) static
+C) final
+D) abstract
+Answer: C
+
+Which method is called by the garbage collector before an object is destroyed?
+
+A) destroy()
+B) finalize()
+C) clean()
+D) delete()
+Answer: B
+
+What is the purpose of the static keyword in Java?
+
+A) To define a variable that can be accessed across multiple classes.
+B) To make methods or variables belong to the class rather than an instance.
+C) To mark a method as immutable.
+D) To override a class method.
+Answer: B
+
+Which memory area is used by Java for dynamic memory allocation of objects?
+
+A) Stack
+B) Heap
+C) Data segment
+D) Code segment
+Answer: B

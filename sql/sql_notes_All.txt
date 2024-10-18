@@ -1,0 +1,111 @@
+1.joins and its type
+1. INNER JOIN:
+Returns only the rows where there is a match between the two tables. If no match is found, the row is excluded.
+2. LEFT JOIN (LEFT OUTER JOIN):
+Returns all rows from the left table and the matched rows from the right table. If there is no match, NULL is returned for the right table’s columns.
+3. RIGHT JOIN (RIGHT OUTER JOIN):
+Returns all rows from the right table and the matched rows from the left table. If there is no match, NULL is returned for the left table’s columns.
+4. FULL JOIN (FULL OUTER JOIN):
+Returns all rows when there is a match in either table. If there is no match, NULL is returned for unmatched rows from either table.
+5. CROSS JOIN:
+Produces a Cartesian product of the two tables, meaning it returns all possible combinations of rows from both tables.
+6. SELF JOIN:
+A table is joined with itself. Useful when comparing rows within the same table.
+
+======================================================================
+2. difference between Truncate and Delete
+DELETE:
+Removes specific rows (can use a condition).
+Slower because each row is deleted one by one.
+Can be undone (rolled back).
+Doesn’t reset auto-increment (identity) values.
+
+TRUNCATE:
+Removes all rows from a table at once.
+Much faster.
+Cannot be undone.
+Resets auto-increment (identity) values.
+Use DELETE when you need to remove certain rows, and TRUNCATE when you want to quickly clear all data from a table.
+===================================================================
+3.what is indes and use of it
+
+An index in SQL is a tool that helps speed up the process of finding data in a database. Think of it like an index in a book, which lets you quickly locate a specific topic without reading every page.
+
+1. Faster Data Retrieval:
+Indexes make searching for specific rows much faster by allowing the database to quickly find the data without scanning the entire table.
+2. Speeds Up Queries with Conditions:
+When you use WHERE, JOIN, or ORDER BY in a query, indexes help locate the relevant data faster.
+3. Improves Sorting:
+Indexes help speed up sorting operations, such as when you're ordering results by a column.
+4. Enforces Uniqueness:
+Unique indexes ensure no duplicate values in a column, which helps maintain data integrity.
+
+CREATE CLUSTERED INDEX idx_order_id ON Orders(order_id);
+
+DROP INDEX idx_employee_name ON Employee;
+
+===============================================================
+4.Window Fuction
+1. ROW_NUMBER()
+Assigns a unique number to each row in a result set, based on the order specified in the OVER() clause. Useful for identifying the position of a row.
+2. RANK()
+Assigns a rank to each row within a partition of a result set. Rows with the same values receive the same rank, and gaps are left in the ranking sequence.
+3. DENSE_RANK()
+Similar to RANK(), but without gaps in the ranking sequence. Rows with the same values receive the same rank, and the next rank is the next consecutive number.
+4. LAG()
+Allows access to a value from a previous row in the same result set, making it useful for comparing values across rows.
+5. LEAD()
+Similar to LAG(), but it retrieves values from a following row. This function is useful for looking ahead in a dataset.
+6. SUM() OVER()
+Calculates the total sum of a column over a specified window of rows. Useful for running totals.
+7. AVG() OVER()
+Computes the average value of a column over a specified window of rows.
+8. COUNT() OVER()
+Counts the number of rows in a specified window or partition.
+9. FIRST_VALUE()
+Retrieves the first value in a specified order within a window or partition.
+10. LAST_VALUE()
+Retrieves the last value in a specified order within a window or partition.
+11. NTILE(n)
+Divides the result set into n equal parts and assigns a bucket number to each row, useful for quartile or percentile calculations.
+12. CUME_DIST()
+Calculates the cumulative distribution of a value in a result set, returning a value between 0 and 1.
+13. PERCENT_RANK()
+Calculates the relative rank of a row as a percentage of the total number of rows.
+
+===============================================================
+5.Constrins
+
+1. NOT NULL Constraint:
+This constraint ensures that a column must always have a value and cannot be left empty.
+2. UNIQUE Constraint:
+This constraint guarantees that all values in a column are different from each other.
+3. PRIMARY KEY Constraint:
+This constraint uniquely identifies each row in a table and ensures that no two rows can have the same key value.
+4. FOREIGN KEY Constraint:
+This constraint creates a link between two tables, ensuring that the value in one table matches a value in another table.
+5. CHECK Constraint:
+This constraint enforces a condition on the values in a column, making sure they meet specified criteria.
+6. DEFAULT Constraint:
+This constraint sets a default value for a column if no value is provided when a new row is created.
+7. INDEX Constraint:
+This is used to improve the speed of data retrieval from a table by creating a data structure that allows faster searching.
+
+========================================================================
+6.Second height salary
+SELECT DISTINCT salary
+FROM employees
+ORDER BY salary DESC
+LIMIT 1, 1;
+
+================================
+SELECT department_id, salary
+FROM (
+    SELECT department_id, salary,
+           ROW_NUMBER() OVER (PARTITION BY department_id ORDER BY salary DESC) AS salary_rank
+    FROM employees
+) AS ranked_salaries
+WHERE salary_rank = 2;
+====================
+
+select deparment_id,salary from(select depart_id,salary ,row_number() over(partition by department_id order by salary desc) as salary_rank from employee) where salary_rank=2;

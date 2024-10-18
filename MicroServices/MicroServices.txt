@@ -1,0 +1,66 @@
+1.Discovary Services: If one service wants to know another service. there we use(Consule,Eureka) these are Discovary Services
+2.What is Microservices:
+	Microservices are a collection of individual services, each with its own architecture, programming language, and database setup
+3.Why MicroServices:
+	Eassy to maintain and manage them individually
+4.API Gateway: 
+	Acts as a central entry point that routes, secures, and manages client requests to various microservices, often handling tasks like load balancing, authentication, and rate limiting.
+
+5.Discovery Services: 
+	Enable microservices to find and communicate with each other by dynamically locating service instances, ensuring that requests are routed to the appropriate service without hardcoding service locations.
+	
+6.Authentication: The process of verifying who someone is.
+  Authorization: The process of determining what permissions or access a user has.
+  
+=========================================================================================
+
+1.What are microservices?
+
+Answer: Microservices is an architectural style that structures an application as a collection of small, independent services, each running in its own process and communicating via lightweight protocols, typically HTTP.
+
+2.What are the main characteristics of microservices architecture?
+
+Answer: Independent deployment, scalability, loosely coupled services, decentralized data management, fault tolerance, and continuous delivery.
+
+3.How do microservices communicate with each other?
+
+Answer: Microservices can communicate either synchronously (e.g., RESTful APIs, gRPC) or asynchronously (e.g., messaging queues like RabbitMQ, Kafka).
+
+4.What is the difference between monolithic and microservices architecture?
+
+Answer: A monolithic application is built as a single unit, whereas microservices are split into independent services, allowing for easier scaling and maintenance.
+5.What is service discovery in microservices?
+
+Answer: Service discovery helps services automatically find and connect to each other without hardcoding their addresses. Tools like Eureka, Consul, and Zookeeper are commonly used.
+
+6.How do you handle data consistency in microservices?
+
+Answer: Data consistency can be managed through techniques like eventual consistency, using distributed transactions (Saga pattern or 
+two-phase commit), and message queues for asynchronous communication.
+
+7.What is the API Gateway in microservices?
+
+Answer: An API Gateway is a server that acts as an entry point for all client requests, routing them to appropriate microservices. It can also handle authentication, load balancing, and rate limiting.
+
+8.How do you handle security in microservices?
+
+Answer: Security can be managed by implementing OAuth2, JWT tokens for authentication, and securing communication with TLS. Each service should be individually secured, and API gateways often manage security policies.
+
+9.What is circuit breaker in microservices?
+
+Answer: A circuit breaker is a design pattern that helps prevent cascading failures in microservices. It detects when a service is not responding and temporarily stops requests to it, redirecting or failing gracefully.
+
+10.What are the challenges in microservices architecture?
+
+Answer: Challenges include handling distributed systems complexity, managing data consistency, ensuring proper communication between services, security, and dealing with distributed tracing for monitoring/debugging.
+
+11.What is the role of Docker in microservices?
+
+Answer: Docker is used to containerize microservices, making them easier to deploy, scale, and manage across different environments.
+
+12.What are some common patterns in microservices?
+
+Answer: Some common patterns include the Saga pattern, Circuit Breaker, API Gateway, Event-Driven Architecture, and CQRS (Command Query Responsibility Segregation).
+
+13.authentication and authorization in microservices architecture 
+In microservices architecture, authentication typically happens at a centralized gateway (like an API Gateway or Identity Provider), where the user logs in and receives a token. Authorization happens within each individual microservice, where the token is validated to check if the user has the necessary permissions for a specific action or resource.

@@ -1,0 +1,432 @@
+OOP'S
+===============
+1.Object:Any Entity which has states and behaviors are called as Object
+ 
+2.Class :Class is a blue print of an object which contains States and behaviors
+		1.States of class are represented by using data member of the class and data members of the class are represented by using variable 
+		2.Behaviors of the class are represented using Function member and function members are represents by using methods
+		
+3.ReferenceVariable(5) :Reference Variable are the special types of variable which is mainly used to store the address of the Object 
+		
+		1.it is impossible to store the address of the object in privative variable
+		2.it is impossible to store primitive value in reference variable
+		3.if multiple reference variable are pointing to same object then changes done through any one object will affect remaining reference 		variable
+ 		4.if multiple reference variable are pointing different variable if changes done through any one reference will not affect remaining variable
+ 
+4.Stock:Class and it's members are going to store in a Stock memory
+
+5.Heap:Method's and It's members are going to store in Heap memory
+
+6.Constructor(8) :Constructor are special type of method which has same name as class name which is mainly used to initialize the data members of the class 
+		1.Constructor are not declare with static key word(Because Constructor are call when object is created )
+		2.Constructor are not declare with return Type if it is declare then it is consider normal method
+		3.we cannot declare Constructor as Final ( The final keyword is used to prevent a method from being overridden by a subclass. Since a constructor cannot be overridden, it makes no sense to declare it as final.)
+		4.Constructor is being called only when object is created
+		5.Constructors are two types Zero Arguments and Parametrized 
+		6.if the programmer don not specify the parametrized constructor then jvm will write default constructor
+		7.Constructor can declare with private when they want to create single tone class other wise user cannot create object of that class from the out side of the class
+		
+
+7.This Statement(4):This statement is used to call constructor from another constructor when both are in same class
+		1.We have to write This statement at the first line of the constructor body
+		2.the calling constructor cannot be called back constructor because it leads to recursive invocation error
+		3.This statement is used in only non static method (Because constructors are non static methods)
+		
+8.This Key Word(3):This key word is mainly used to differentiate between global variable and local variable 
+		1.we can use this key word in only non static methods
+		2.we can use multiple this key word 
+9.Constructor Overloading (2):Constructor overloading is process of developing multiple constructor which may differ in number of arguments, datatype of arguments ,order of arguments
+		1.Constructor Overloading is the best example for Compile Time polymorphism 
+
+10.Relations (3):relations are mainly used to provide relation between classes in order to achieve 2 main goals
+		1.Reduce the number of line of code 
+		2.Code reusability
+		
+11.Has-A Relation (3):it is a type of relation where one object is dependent on another object based on dependency
+		1.There is a two types of Has-A relation is there
+			1.Aggrigation
+			2.Composition
+			
+12.Aggrigation (Static) (2):is a type of has a relation where one object is not strongly dependent on another object is called as Aggregation
+		1.Aggrigation is achieved by creating global static reference variable
+		
+13.Composition (Non static):is a type of has a relation where one object is strongly dependent on another object is called as Composition
+		1.Composition is achieved by creating global non static reference variable
+		
+14.Is Relation(Inheritance)(10):Is a relation is a type of a relation where one object if acquiring the properties of another class is called as
+		1.The class which is inheriting the properties is called as sub class
+		2.the class from where the properties are inheriting is called Supper class
+		3.By using Subclass reference variable we can use both subclass properties as well as supper class properties
+		4.By Using Supper class reference variable we can use only Supper class properties
+		5.we use Extends key word to inherited the class
+		6.we cannot inherited private members
+		7.we cannot inherited Supper class Constructor in to Subclass (Because Constructor Should have same name as class name)
+		8.we cannot inherited Final class. but we can inherited Final data member and Final method but we cannot override them
+		9.We can Inherited Static members but we cannot override them (because Static members are binded in Compile time hence it will not support Dynamic binding
+15.Types of Inheritance(5):
+		1.Single inheritance
+		2.Mutiple inheritance
+		3.Multilevel inheritance
+		4.Hybride inheritance
+		5.Hirarckicle inheritance
+16.Supper Keyword(3):is mainly used to call constructor from another Constructor when both are in different class
+		1.we have to write Supper statement at the first line of the constructor body
+		2.calling constructor cannot be calling constructor because it leads recursive invocation error
+		3.we cannot use multiple Supper statement with in single constructor
+17.Supper Statement(4)::is mainly used to differentiate between Subclass variable and supper class variable
+		1.We cannot use supper key work with in static method
+		
+18.Method Overloading (2):developing multiple method which in same class which may differ in number of argument. data type of argument, and order of argument 
+		1.method Overloading is the best example for Compile Time Polymorphism
+19.Method Overriding (2):Subclass acquiring the properties of Supper class and changing method definition with out changing method declaration is called as
+		1.method overriding is the best example for run time polymorphism
+20.Type casting:Converting One type to another type is called as Type casing
+	1.Primitive Casting :Converting one primitive value to another promitive value is called as
+			1.Widining:Converting lower primitive value to heigher primitive value is called as
+			2.narrowing:Converting heigher primitive value to lower primitivevalue using casting statement
+	2.Dirived casting:Converting one object refarence to another object refarence is called as
+			1.Upcasting:Converting Subclass refarence variable to supper class refarence variable is called
+			2.Downcasting:Converting upcasted refarence veriable back to sub calss refarence variable using casting statement is called as
+19.Abstract class and Method (9):The methos which has only method declaretion and no method defination is called as
+		1.Abstract methods has to be declare with abstract key word
+		2.If Any class contains atleast one abstract method then that class should be declasre with Abstract key word
+		3.We cannot declare Object for the abstract class but we can create refarence variable for abstract class
+		4.if any class inherited the abstract clss then that class should override all abstract method which are precented in abstract class.if it is not posible then that class should be declare abstract class
+		5.Abstract class cannot be declare as Final because final class cannot inherite
+		6.Abstract method cannot be declare as final beacause final method cannot be override
+		7.Abstract method cannot be declare as private because private members are not inherited
+		8.Data members of Abstract class can be static or non static
+		
+20.InterFace(5):InterFace is a special type of Class where methods are be default Abstract and members are by default static and final
+		1.we cannot create Object for interface but we can create refarence veriable
+		2.if a class implement interface that class override all method which are precented in interface
+		3.we cannot declare interface as Final because final classes are not inherited
+		4.methods are also not declare with final because it cannot inherited 
+		5.methods are not declare with private bacause it cannot inhetited
+		6.A Class can Inherite Multiple InterFace
+		7.we use Implement key word to inherite interface
+		8.if One interface is inheriting another interface then we use extend key word to inherite
+		
+21.Polymorphisum (4):One Entity showing different bhiheviours at different places is called as
+
+		1.Compaile time polimorphisum :Binding method declaretion to method defination by the compailer at the complaile time based on orguements is called as Compail time polimorphisum
+				1.it is a STATIC binding
+				2.Constructor overloding and method overloading is the best example for complaile time polymorphisum
+		2.Run Time polimorphisum :Binding method declaretion in to method defination by the JVM at the run time based on Objects is called as
+				1.it is a dynamic binding
+				2.Method Overriding is the best example for run time polymorphisum
+22.Abstraction (5):Abstraction is a process of hiding implementation and providing only services is called as.In order to achive abstracttion we have to follow few steps as listed below
+		1.Genralize all common methods in one Common supper interface 
+		2.create refarence veriable of interface
+		3.Create the object of the sub class and store that refarence veriable in to supper interface refarence veriable
+		4.Now use that upcasted refarence veriable in order to use sub class implementation
+23.Access Specifier
+	1.Public :we can use them anywhere in the project
+	2.Protected:we can use them anyware with in the package but if you want accesses them out side the package we have to import them (Only if subclass inherited the related class)
+	3.Default or Package level:we can use them in only with in the package
+	4.Private:we can use them only with in it's own class
+24.Encapsulation (3): Providing security for the data members of the class declare them as private and grant access through the getter's and setter's method is called as Encapsulation
+		
+25.HashCode() (2):HashCode is a Unique integer value which is genareted based on address of the object
+26.ToString() (2)To string is a representation of object which contains 
+		1.Fully qualified class name
+		2.'@' charect
+		3.hexadecimal value of hashcode method
+27.Equals():it used to compare hashcode value of given two objects 
+28.String (10):Is a immidiate sub class of Object class
+		1.We can create String in two ways 1.with using new oparetor2.with out using new oparetor2
+		2.if String value is store using new oparetor those values are stored in non constan pool.inside non constant pool dublicates are allowed
+		3.if string value is stored with out using new oparetor then that value is stored in constant pool inside constant pool dublicates are not allowed
+		4.String is not a Thread safe class
+		5.Mthod are not Syncronised
+		6.HashCode(),ToString(),and equals()are overriden in String class
+		7.it is immuteble class 
+29.StringBuffer (5):1.String Buufer is a thread safe class 
+		2.Muteble class
+		3.methods are sycronised
+		4.we can initialize va;lue by using new oparetor
+		5.to String ()is only overriden in StringBuffer
+		
+30.StringBuilder (6):1.String builder is not athread safe class
+		2.methods are not sycrnized
+		3.muteble class
+		4.we use new oparetorto create object
+		5.to string () overriden 
+31.Exception:Exception is a unexpected event occured at run time purformed by single lines of code is called as
+		What will happens when Exceptionoccured
+		1.When ever there is a execution JVM will create the object of the coresponding Exception class 
+		2.After that JVM will throw that Exception object to correspondent exception class by useing throw key word
+		3.if that class do not handle the exception. then the JVM will terminate all method from the stock
+		4.Then the JVM will call default exception handler
+		5.default exception will handle the exception and print 3 main points
+				1.name of the exception
+				2.reseon for the exseption
+				3.Complete Stock trace
+32.Exception handler:Exception hadler is a perfect way to handle the exception by using Try catch block
+		1.inside Try block we write Risky code 
+		2.Catch block is used to handle the exception
+		3.we can write Multiple catch block for a single try block
+33.Exception propagation:it is mainly used to propagate exception from called method back to calling method
+		1.we use Throw and Throws key word to propagate the exception
+		2.Throws key word is declared with in the method declaretion
+		3.Throw key word is used as return type of the method to propagate the exception
+34.Types of Exception:
+		1.Checked Exception
+				1.IOException
+				2.Intrupt exception
+				3.SQLException
+				4.Class not found
+		2.Unchecked Exception:
+				1.Class cast exception
+				2.illegalOrgument Exception
+				3.IndexOutofBound Exception
+				4.Arthametic Exception 
+				
+35.Data Structure:data Structure is a processes of Storing data in perfect maner to use them effishiently
+		Types of DataStructure
+				1.Queue(First in last out order)
+				2.Stock(First in First out Order)
+				3.List
+					1.Single linked List
+					2.Duble linked List
+===============================================
+Collection
+---------------------------------
+36.Collection(Interface) : Collections are group of class and interfaces which are reprecented as one entity
+		1.Collections are grovable in nature
+		2.collections are supports heterogeneous data
+		3.Each collection will have atleast one under line data structure
+		4.Each collection will have there own inbuilt methods to purfor requirement
+		5.Collections are presented in .util.* package
+37.Collections(Class)	w : Collections are known as  frame work which is mainly used to store and manupulate the group of objects
+38.Set (5):
+		1.It will not support dublicate value
+		2.it will suport only one null value
+		3.it will not reserves insertion order 
+		4.It is not a index type collection
+		5.Set Implements:
+				1.HashSet (6):
+						1.Underline data structure is Hash Table
+						2.it implements Itareble,set,collection,serializeble,cloneble interfaces
+				2.Linked Hash Set (6)
+						1.Under line data structure is doubly-linked list and hash table
+						2.implements list and queue
+				
+				3.Tree Set (5)
+						1.it will return sorted result
+						2.do not allow null values
+						3.Elements are sorted in two ways
+							1.Natural ordaring
+							2.Customized Ordering (We should use Comparetor())
+						4.Under line data Structure is Red-Black Tree
+		
+	
+39.List
+		1.It will allow dublicates 
+		2.It will preserves insertion order
+		3.It will allow mutilple null values
+		4.It is a index type collection
+		5.List implements:
+				1.ArrayList:
+						1.Implements itareble,collection,list,serializeble,cloneble,randam acces  interfaces
+						2.It is not a thread safe class
+						3.method are not syncronized
+						4.it will increase it 100% size after completion
+						5.Underline data structure is Dynamic Array 
+				2.Vector:
+						1.Implements itareble,collection,list,serializeble,cloneble,randam acces  interfaces
+						2.Thread safe class
+						3.Methods are syncronized
+						4.Underline data structure is Dynamic Array 
+				3.Linked List:
+						1.Under line data structure is doubly-linked list
+						2.implements list and queue
+		
+	
+40.Queue:
+		1.It will allow dublicates 
+		2.It will preserves insertion order
+		3.It will allow mutilple null values
+		4.It is a index type collection
+		5.Queue implements
+					1.Linked List
+							1.Under line data structure is doubly-linked list
+							2.implements list and queue
+
+	
+=================================
+Map
+------------------------------
+41.Map :
+		1.Map is a interface which stores the data in key value pair
+		2.map do not supports dublicate key and it will support dublicate values
+		3.we use put(key,value) to insert data and get(key) to get the data
+		4.if you pass invalid key it will provide null value
+		5.map do not allow dublicates if you try to add then it will update the value with new one
+		6.Map is a interface which implements 
+				1.HashMap
+				2.LinkedHashMap
+				3.treeMap
+42.Hash Map
+43.Hash Table
+=================================
+Multi Threads
+-------------------------------
+44.Thread : is a independen part of same program which has its own cpu time and memory allocation
+45.Types of Thread:
+		1.Main Thread
+		2.Thread sheduler
+		3.Garbage Collectors
+46.Wayes to create Thread:
+		1.We can create thread in two ways
+				1.By Extending Thread class:
+						1.Steps to create thread
+							1.inherite the Thread class in to sub class
+							2.Override the Run() in subclass
+							3.Create the subclass Object 
+							4.use the subclass refarence variable and call start()
+							5.start() will internally calls the run method
+				2.By implementing Runneble Interface
+						1.Steps to create Thread
+							1.Write the implementation for Runneble Interface using Lamda Function
+							2.Create the object of Thread class
+							3.Pass the Runneble Interface as an aruement into the Thread class Constructor
+							4.use that thread class refarence veriable call the start() it will internally calls the run ()
+47.Properties of thread :there are 3 main properties are there those are listed below:
+		1.Id: unique integer value provided by thread sheduler for each thread to identify them uniquely
+		2.Name:name of the thread we can also set (refarence.set("Thread Name"))
+		3.Priyority:used to set priyority to thread 0 is low priyority 5 is normal priyority 10 heigh priyority
+48.Method to hold the execution of thread
+		1.sleep():it is used to puse the exicution of thread at specified time and give chance to another other thread to exicution
+		2.yeild():it pause the exception of current thread and give chance to another other thread to exicution
+		3.join():it will Execute the current thread by pausing all remaining thread execution
+49.Dead Lock :Thread 1 is Complete its execution on obj1 and waiting to Quring the obj2. samly Thread 2 is completes its execution on obj2 and redy to acquiring obj1 now Two threads are at waiting state this will continues this condition is called as  
+50.Thread Synchronization :this is used to avoid race condition Synchronization method allow only one thread at one time
+51.Thread life cycle:There are mainly 5 steps are there in thread life cycle
+		1.New:in this state new thread is created but not yet started
+		2.Runnable:after calling the start() method, the thread moves to the runnable state
+		3.Running:When the scheduler selects the thread from the runnable pool and the thread starts executing its run() method,it moves to the running state.
+		4.Blocked/Waiting:if Thread is waiting for I/O or calling sleep() or wait() methods then it is Blocked/waiting state
+		5.Terminated:A thread enters the terminated state when its completes its execution,
+52.Race Condition: Mutiple threads are trying to acces same resource which is locked by other thread this is called as race condition
+		1.this can be avoided by Sychronized method
+==========================
+52.Wrapper Classes:Converting primitive value in to  object is called as
+		1.Boxing And AutoBoxing:
+				1.Converting a primitive value to wrapper class object using new operator is called Boxing
+				2.Converting a primitive value to wrapper class object with out using new operator is called AutoBoxing
+		2.Unboxing and AutoUnboxing:
+				1.Converting wrapper class object back to primitive value using value() method is called Unboxing 
+						Integer obj = 10;
+						int pri = obj.intValue()
+				2.Converting wrapper class object back to primitive value with out using value() method is called Auto-Unboxing
+				
+53.Integer.parseInt("100") = 100(Converts String into int)
+54.String.valueOf(100)="100" (Convert int into String)
+55.Garbage collectors:Garbage collectors in Java are mechanisms that automatically manage memory by cleaning up unused or dereferenced objects, freeing up space for new objects to be allocated.
+	1.System.gc();(If you want execute forcefully)
+	
+	
+	
+===============================================================
+56.When we have to use String,StringBuffer and StringBuilder
+
+Class				Mutability					Thread Safety	When to Use
+
+String				Immutable					N/A	When the string value is fixed and not changed.
+
+StringBuilder		Mutable						Not thread-safe	When you need to modify a string in a single-threaded context.
+
+StringBuffer		Mutable						Thread-safe	When you need to modify a string in a multi-threaded context.
+
+
+57.Types of Object creation
+
+		1.Using the new keyword
+		
+		This is the most common way to create an object.
+		MyClass obj = new MyClass();
+		
+		2.Using Class.forName()
+		
+		Creates an object by dynamically loading the class at runtime.
+		MyClass obj = (MyClass) Class.forName("MyClass").newInstance();
+		
+		3.Using clone()
+		
+		Creates a copy of an existing object.
+		MyClass obj = (MyClass) existingObject.clone();
+		
+		4.Using Object Serialization
+		
+		Deserializing an object from a stream can recreate it.
+		ObjectInputStream in = new ObjectInputStream(new FileInputStream("file"));
+		MyClass obj = (MyClass) in.readObject();
+
+		5.Using Factory Methods (e.g., Singleton Pattern)
+		
+		Objects can also be created using custom factory methods.
+		MyClass obj = MyClass.getInstance(); // Example for Singleton
+		
+58.Solid Principles
+
+	1.Single Responsibility Principle (SRP)
+	A class should have only one job or reason to change.
+
+	2.Open/Closed Principle (OCP)
+	Classes should be open for extension but closed for modification.
+
+	3.Liskov Substitution Principle (LSP)
+	Subclasses should be able to replace their parent class without breaking the code.
+
+	4.Interface Segregation Principle (ISP)
+	Don’t force classes to implement interfaces they don’t use. Use smaller, specific interfaces.
+
+	5.Dependency Inversion Principle (DIP)
+	Depend on abstractions (interfaces), not on concrete implementations.
+	
+
+
+ 59.Object Class Methods
+ 
+ Method						Purpose
+equals()					Compares objects for equality (default: reference equality).
+hashCode()					Returns an integer hash code for the object.
+toString()					Returns a string representation of the object.
+getClass()					Returns the runtime class of the object.
+clone()						Creates and returns a copy of the object.
+wait()						Makes the current thread wait until notify() or notifyAll().
+notify()					Wakes up one waiting thread.
+notifyAll()					Wakes up all waiting threads.
+
+
+60.Steps to create Custom Exception
+	1.Create a class which extends Exception Class
+	2.Inside that class create Construtor 
+	3.Call Supper class Constructur using Supper();
+	
+61.Memory Breakdown:
+Heap: Stores objects and instance variables.
+Stack: Stores local variables and method call information.
+Method Area / MetaSpace: Stores class-level data, including static members.
+
+62.how To create an immutable class:
+
+1.Declare the class as final.
+2.Make all data member of the class as final and private
+3.declare parametraized constructor
+4.declare getter method avoid setter method
+
+63.What are design pattren why it is used
+
+	Design pattren are used to achive reuseble solution to avoid common problems that are occered in softer designing process
+
+64.Thymeleaf: is a modern server-side Java template engine used for web development. It allows you to create dynamic web pages with a combination of HTML and Java code, 
+
+65.how can we achieve spring securtity explain end-to end
+
+	1.Dependencies: Add spring-boot-starter-security and spring-boot-starter-web to your project.
+	2.Configuration: Extend WebSecurityConfigurerAdapter (or use SecurityConfigurer in Spring Security 5.7+) to customize 3.security settings.-
+	4.User Authentication: Define users either in-memory (like in the example) or using a persistent store like a database.
+	5.Custom Login: Optionally, create a custom login page and controller.
+	6.Testing: Test the security features (login, access restricted areas, etc.).

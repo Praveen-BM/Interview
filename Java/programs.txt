@@ -1,0 +1,65 @@
+1. ConvertingCases
+2. FindBalenceing
+3. FindBetweenDistance
+4. FindFrequencyInArray
+5. FindindSubString
+6. FindingFactorial
+7. FindingFibonacciNumber: A Fibonacci number is part of a sequence where each number is the sum of the
+		 two preceding ones, typically starting with 0 and 1. The sequence begins as:
+		 0, 1, 1, 2, 3, 5, 8, 13, 21, and so on. The general formula is:
+8. FindingMissingNaturalNumber
+9. FindingPrimeNumber
+10. FindingreverseStringInString
+11. FindLargestNumInListWithTwoApproch
+12. FindNumPalindrome
+13. FindPositiveAndNegativeNumInList
+14. FindSecondLargestNumInArrayList
+15. GenarateRamdamNum
+16. MergeTwoArray
+17. PalindromeInscentence
+18. Practice
+19. Print11TableWithoutUseingLoop
+20. PurmutationAndCombination
+21. RemoveDuplicate
+22. ReverseNumTwoApproch
+23. ReverseScentence
+24. ReverseTheScentence
+25. RotatingArrayNew
+26. RotatingArrayRelatedKPMG
+27. RotatingIntArray
+28. SingleToneCheck
+29. SingleToneClass
+30. SortIntArray
+31. StringHalfUpperHalsLower
+32. SumOfTwoEle
+33. SwapingStringsWithOutUsingThirdveriable
+34. SwappingTwoNumberWithOutUsingThiredVeriable
+35. JavaProgramInfo
+36. ArrayMid
+============================================================================
+37. AvgSalOfMaleFemale
+38. CheckFirstAndLastCharectorsAreSameOrNot
+39. ConcatAndUppercaseListOfString -------------------XXXX
+Answer: String collect = lisg.stream().map(ref->ref.toUpperCase()).collect(Collectors.joining(" "));
+40. Employe
+41. FileterIntegerWhichStartWithOne
+42. FindAllNumDivisiableBytwo
+43. FindDublicateNumber
+44. FindingMaxNumber
+45. GetDistDept
+46. GroupByCity
+47. GroupByDeptWithMaxSalary
+48. GroupByDiseaseWithAvgAmmount
+49. HashMapSorting
+50. HikeSalaryForSecificAgeGroup
+51. JoiningTwoArrayList
+52. MergeAndSortTwoArrayList
+53. Patient
+54. SecondHeightSalaryOfEmplyoe
+55. SequenceOfWordsInList
+56. SortList
+57. SquaringNumList
+58. SummingEachElementWithTotalSum:---------------------XXXXXXXXXXXXXX
+	Integer reduce = numList.stream().reduce(0,Integer::sum);
+		 System.out.println("re "+reduce);
+		 numList.stream().map(num->reduce+num).forEach(System.out::println);

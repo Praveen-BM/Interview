@@ -1,0 +1,69 @@
+1.Spring boot
+=============
+1.Annotations
+----------------
+1.MainMethod Annotation
+-----------------------
+1.@SpringBootApplication
+	1.@EnnebleAutoConfigaretion
+	2.@ComponentScan
+	3.@Configaretion
+-------------------------
+2.StreoType Annotation
+-------------------------
+1.@Component
+	1.@Service
+	2.@Repository
+	3.@RestController/@Controller
+	4.@Entity
+--------------------------------
+3.SpringCoreRelated Annotation
+--------------------------------
+1.@Configaretion
+2.@Bean  (Method level)
+3.@Autowired
+4.@Qualifire
+5.@Primery(Method level)
+6.@Lezy
+7.@Value
+8.@Property source
+9.@ConfigaretionProperties
+10.@Profile
+11.@Scope
+	1.@Scope("Singleton")
+	2.@Scope("Prototype")
+------------------------------------
+4.Rest API Related Annotation
+---------------------------------
+1.@RestController
+2.@RequestMapping
+3.@GetMapping
+4.@PostMapping
+5.@PutMapping
+6.@DeleteMapping
+7.@RequestBody
+8.@PathVeriable
+9.@RequestParam
+10.@ControllerAdvice(Used to handle Exception)
+11@ExceptionHandler(Used to handle Exception)
+---------------------------------------------------
+1.@Entity
+2.@Table
+3.@Column
+4.@Transaction
+--------------------------------------------
+5.Entity class relationship Annotation
+-----------------------------------------
+1.@OneToOne
+2.@OneToMany
+3.@ManyToOne
+==================================================================================================================
+1.Application.properties Related
+---------------------------------------
+1.Db Configuration
+2.Logger
+3.Authentication
+4.Swagger
+
+
+

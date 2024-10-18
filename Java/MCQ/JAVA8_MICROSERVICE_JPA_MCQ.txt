@@ -1,0 +1,344 @@
+Java 8
+What is the purpose of the Optional class in Java 8?
+
+A) To avoid null pointer exceptions by providing a container that may or may not contain a non-null value.
+B) To improve performance in multithreaded environments.
+C) To replace all collections in Java.
+D) To allow more efficient garbage collection.
+Answer: A
+
+Which of the following is not a valid terminal operation in Java 8 Streams?
+
+A) forEach()
+B) collect()
+C) map()
+D) reduce()
+Answer: C
+
+What does the @FunctionalInterface annotation signify in Java 8?
+
+A) An interface with no methods.
+B) An interface with exactly one abstract method.
+C) An interface with only static methods.
+D) An interface with any number of methods.
+Answer: B
+
+Which method in Java 8 Stream API is used to transform each element of a stream?
+
+A) filter()
+B) map()
+C) forEach()
+D) reduce()
+Answer: B
+
+Spring Boot
+In Spring Boot, what is the purpose of the @SpringBootApplication annotation?
+
+A) It sets up automatic configuration, component scanning, and allows running the application as a standalone application.
+B) It provides security features for microservices.
+C) It is used to manage database transactions.
+D) It handles exception management across the application.
+Answer: A
+
+What is the default embedded server in Spring Boot?
+
+A) Apache Tomcat
+B) Jetty
+C) Undertow
+D) Wildfly
+Answer: A
+
+Which annotation in Spring Boot is used to map HTTP requests to specific handler methods?
+
+A) @Component
+B) @Service
+C) @RequestMapping
+D) @Autowired
+Answer: C
+
+Which of the following helps in loading external configurations in a Spring Boot application?
+
+A) application.properties
+B) @RestController
+C) @Transactional
+D) pom.xml
+Answer: A
+
+Microservices
+Which of the following is commonly used for service discovery in a microservices architecture?
+
+A) Spring Data
+B) Spring Security
+C) Eureka
+D) JPA
+Answer: C
+
+What is the purpose of a Circuit Breaker in microservices?
+
+A) To provide security for microservices.
+B) To manage service discovery.
+C) To prevent cascading failures by breaking the connection between services when a failure is detected.
+D) To balance the load across different microservices.
+Answer: C
+
+Which of the following is NOT a benefit of a microservices architecture?
+A) Scalability
+B) Fault isolation
+C) Rapid deployment
+D) Reduced network overhead
+Answer: D
+
+Which of the following is used to route requests in a microservices architecture?
+A) Eureka
+B) Hystrix
+C) Zuul
+D) Spring Cloud Config
+Answer: C
+
+JPA (Java Persistence API)
+Which of the following annotations is used to map a class to a database table in JPA?
+A) @Entity
+B) @Table
+C) @Id
+D) @Column
+Answer: A
+
+Which of the following annotations is used to specify the primary key of an entity in JPA?
+A) @PrimaryKey
+B) @Key
+C) @Id
+D) @GeneratedValue
+Answer: C
+
+In JPA, what is the purpose of the EntityManager?
+A) To manage transactions between entities.
+B) To provide a high-level API for interacting with the database and managing the lifecycle of entities.
+C) To manage database schema creation.
+D) To handle security for database operations.
+Answer: B
+
+In JPA, which annotation is used to map a foreign key relationship between entities?
+A) @OneToOne
+B) @ManyToOne
+C) @ManyToMany
+D) All of the above
+Answer: D
+
+General Architecture and AWS
+Which AWS service can be used to store Docker images for use in a microservices architecture?
+A) Amazon RDS
+B) AWS Lambda
+C) Amazon S3
+D) Amazon ECR
+Answer: D
+
+Which of the following is a popular tool for continuous integration and deployment (CI/CD)?
+A) Maven
+B) Jenkins
+C) Docker
+D) Hibernate
+
+=============================================
+Which of the following Java 8 Stream methods is used to sort the elements in natural order or using a custom comparator?
+
+A) map()
+B) sorted()
+C) filter()
+D) distinct()
+Answer: B
+
+Which method in Java 8 is used to create an infinite stream?
+
+A) Stream.generate()
+B) Stream.infinite()
+C) Stream.loop()
+D) Stream.limit()
+Answer: A
+
+What is the main purpose of the default keyword in Java 8 interfaces?
+
+A) To declare a method with no implementation.
+B) To provide a default implementation for an interface method.
+C) To mark a method as optional.
+D) To override a class method.
+Answer: B
+
+Which of the following is a correct way to declare a lambda expression in Java 8?
+
+A) () -> System.out.println("Hello World")
+B) -> System.out.println("Hello World")
+C) System.out.println("Hello World") ->
+D) (String s) => { System.out.println(s); }
+Answer: A
+
+What is the purpose of the flatMap() method in Java 8 Streams?
+
+A) It combines multiple streams into one.
+B) It filters the elements of a stream.
+C) It maps elements of a stream and flattens the result.
+D) It sorts the elements of a stream.
+Answer: C
+
+Spring Boot
+Which of the following properties disables the default embedded server in Spring Boot?
+
+A) server.enable=false
+B) spring.server.disabled=true
+C) spring.main.web-application-type=none
+D) server.shutdown=true
+Answer: C
+
+How do you exclude a specific auto-configuration class in Spring Boot?
+
+A) @SpringBootApplication(exclude=ClassName.class)
+B) @EnableAutoConfiguration(exclude=ClassName.class)
+C) @ComponentScan(exclude=ClassName.class)
+D) @ConfigurationProperties(exclude=ClassName.class)
+Answer: B
+
+Which annotation is used to indicate that a class provides configuration properties in Spring Boot?
+
+A) @Controller
+B) @PropertySource
+C) @ConfigurationProperties
+D) @RestController
+Answer: C
+
+In Spring Boot, which of the following can be used to handle exceptions globally?
+
+A) @RestControllerAdvice
+B) @ExceptionHandler
+C) @Controller
+D) @EnableAutoConfiguration
+Answer: A
+
+Which of the following annotations is used to schedule tasks in Spring Boot?
+
+A) @Scheduled
+B) @Async
+C) @Task
+D) @Cron
+Answer: A
+
+Microservices
+Which of the following patterns is used to ensure resiliency in microservices by limiting failures across services?
+
+A) Singleton Pattern
+B) Circuit Breaker Pattern
+C) Observer Pattern
+D) Proxy Pattern
+Answer: B
+
+What role does an API Gateway play in a microservices architecture?
+
+A) It provides database access.
+B) It manages load balancing across microservices.
+C) It handles client requests and forwards them to appropriate microservices.
+D) It stores application logs.
+Answer: C
+
+In a microservices architecture, which of the following is used to dynamically scale individual services?
+
+A) Load Balancer
+B) Message Queue
+C) Kubernetes
+D) Circuit Breaker
+Answer: C
+
+Which of the following protocols is typically used for synchronous communication between microservices?
+
+A) REST
+B) Kafka
+C) RabbitMQ
+D) gRPC
+Answer: A
+
+What is the purpose of a service registry (e.g., Eureka) in a microservices environment?
+
+A) To store service configurations.
+B) To register and track the instances of services for service discovery.
+C) To log service errors.
+D) To provide messaging between services.
+Answer: B
+
+JPA (Java Persistence API)
+In JPA, what is the correct annotation to define a composite primary key?
+
+A) @Id
+B) @Embeddable
+C) @PrimaryKey
+D) @IdClass
+Answer: D
+
+Which of the following correctly describes the @OneToMany relationship in JPA?
+
+A) A single entity is related to multiple entities, and those multiple entities are related back to the single entity.
+B) A single entity is related to exactly one other entity.
+C) Each entity is related to multiple other entities.
+D) A single entity is related to multiple entities, but those entities are not related back to the single entity.
+Answer: A
+
+Which method of the EntityManager in JPA is used to start a transaction?
+
+A) start()
+B) beginTransaction()
+C) getTransaction().begin()
+D) transactionStart()
+Answer: C
+
+Which query language is used in JPA to interact with the database?
+
+A) SQL
+B) JPQL
+C) HQL
+D) PQL
+Answer: B
+
+Which annotation is used in JPA to generate the value of a primary key automatically?
+
+A) @Generated
+B) @Id
+C) @GeneratedValue
+D) @PrimaryKeyGenerated
+Answer: C
+
+General / Architecture
+Which of the following is NOT a benefit of using microservices?
+
+A) Improved scalability
+B) Improved fault isolation
+C) Increased development complexity
+D) Faster deployment cycles
+Answer: C
+
+In a microservices architecture, which of the following is commonly used for asynchronous communication?
+
+A) REST
+B) Kafka
+C) SOAP
+D) HTTP
+Answer: B
+
+Which AWS service is best suited for hosting a microservices-based application in a containerized environment?
+
+A) AWS Lambda
+B) Amazon ECS
+C) Amazon S3
+D) Amazon RDS
+Answer: B
+
+Which AWS service allows for serverless compute, ideal for executing code in response to events like HTTP requests or database changes?
+
+A) Amazon RDS
+B) AWS Lambda
+C) Amazon SQS
+D) Amazon EC2
+Answer: B
+
+Which of the following tools is typically used for monitoring microservices in production?
+
+A) Jenkins
+B) Prometheus
+C) Git
+D) Hibernate
+Answer: B

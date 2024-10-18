@@ -1,0 +1,220 @@
+1)Fedex
+***********
+Angular:-
+1)how to send data from one component to another component
+2)what is services in angular
+3)what is pipe
+4) how can we create custome pipe in Angular
+5) how to configure angular to springboot app explain steps
+6) what is directives 
+7)print data from fake api write example and show output on table
+
+Java
+-----------
+1)when use spring, springbuilder,and springboofer class in java
+2)internal work of Hashmap
+3)diiferbce between HashMap and ArrayList
+
+programs:-
+1)write a program using java8 to count group of emplyee from emplyee table based on there Department
+2)sorting array in assending order without in built method
+
+sql
+====
+1)find sencond highest salary fronm table
+2) differnce between truncate and delete
+
+springBoot:-
+1)Internal working of @SpringBootAnnotation
+2) what is cache in springBoot
+3) sterio type annotation with examples
+
+==========================================================================
+
+2)Tavant
+1) steps to git repository
+2)explain deployment process
+3)which tool you are using to test application
+4)Agile Methodology
+5)if exception or errors coming then how you are Tracking them any specific tool you are using?
+6)how to handle exception s in spring boot
+what is cache in springBoot
+
+
+
+sql:-
+what is group by function 
+2) explain joins
+3) what is procedures
+================================================================================
+3)___________
+
+1)java
+-------
+1) differnce between HashMap and hashTable
+2) differnce based Hashset and HashMap
+3)function Interface with example
+4)how many ways we can create Thread class Objects
+5) what is singletone object with example
+
+Programs:-
+1)select odd numbers from list and multiple them into 2 and print those values using java8
+   ex:- array[]{1,2,3,4,5,6,7,8}
+   expected output:- 2,6,10,14
+2) find male and female count from list using java8
+3)increase 10% salary of emplyees whose department is 'HR'; and print those records using forEach by using java8
+
+
+4) volkswagen
+===============
+java(java8)
+-----
+1)what is predicate
+2)what is consumer
+3)what is features java8 providing
+4)what is lambda expression 
+5) what is functional programing
+6)functional interface
+7) differnce between jpa Repostory & Curd repository
+8)differnce between requestparam & Attribute param
+9)getmapping or PostMapping which is better and why explain 
+10)how can we achieve spring securtity explain end-to end
+  ex-> from dependancy to class configurations
+
+11)what is thymeleaf
+
+2) programs
+1)count the no.of occurance of words in given string using java8
+   input:- "Welcome to the java the java";
+   output:-{welcome=1,to=1,the=2,java=2}
+
+2) remove all white spaces from string
+3)write a program to replace character with its occurance in string 'T'
+  input:- OPENTEXT
+  outpu:- OPEN1EX2
+  
+2) Angular
+===========
+1)write code for creating custome pipes 
+2) write code for services 
+3)what is decorator
+4) how can we send data from one component to another if they dont have relation between componets
+5) what is structural directives
+6)differnce between Observable and promises
+7) what is bootstraping
+
+
+
+
+4) cmm
+1)spring boot
+============
+1) diiferbce between @componenScan and @component annotation
+2) what is @EnableAutoConfiguration
+3) how to inject one object values from another in hibernate like has a relation
+4) what is agile methodology
+
+java:-
+=====
+1) what is the use of default method and why
+2) write example program for functional interface with lambda
+3)explain method reference
+4)explain differnce between map method and forEach in java8
+
+program:-
+1)write program to find duplicate characters in java
+
+5)arnavGlobal
+================
+1)what is string constant pool
+2) why string is immutable 
+3) what is checked and unchecked exception
+4)Abstraction 
+5)are you used multithreading in your project if yes then how explain
+6)what is server context
+7) differnce between Soap and Restful
+8) explain HTPP status Code
+9) what is method hidding 
+10)stpes to configure database connection in spring boot
+
+Angular:-
+-------
+1) explain lifecycle methods in angular
+2) write sample code for angular routings
+3) what is the use of angular.json file
+4) what is forms in angular and its types
+5) show the data on ui which is coming from api by  using filter
+6) sample code for dataBinding
+7) @ directives with example
+8)what is inbuilt pipes in angular
+
+
+
+6)RRS Solution
+1)what is constructore overloading
+2)differnce between interface and abstractClass
+4) when static variable will get momory and instance varibale get momory
+5) why string object is immutable
+6) what is differnce between ArrayList and set when we have to use  
+7) why staic method not overriden
+ programs:-
+ =======
+ 
+ 1) write program for sorting array
+ 2)find not reapted first character from given string.
+ 3) sort the string descending order using java8
+ 4) differnce between Filter and Map method
+ 5)when should we have to use map and when filter method
+ 
+ SQL:-
+ 1)find those emplyee details those are address not available in employee table 
+ ex:- emplyee table have 200 records , and address table have 100 records ,
+ employee table primary key are availble in address table 
+ so find non matching records and pring
+ 
+ 2) find second highest salary from table
+ 3)what is indexes
+ 4) what is left outer joins 
+ 
+
+TCS
+1) program for emplyee to sort emplyee based on salary using comparator
+2)Merge 2 integer array in java
+2)what is joins in sql
+3)write syncronized block
+4)write singletone class in java 
+5) explain Design Pattern
+6) differnce between jpa & Hibernate
+7)states of hibernate
+8)parallel stream in java8
+9) git commands
+
+
+crisil
+=======
+1) explain project architecture what is you are using
+2) diff between monolithic and Microservices Archtecture
+3)what is Robbin concept in microservices
+4)how top achieve dynamic pathVariable
+5)if @controller replace with @component it is working or not
+6)what is runners
+7)diff between concurrentHashmap and synchronized Hashmap
+8) write program to remove Capital lettes from string
+9)write program to count no.of occurence in java for given string using java8
+10)why static method if default method is there in java8
+
+Angular:-
+1)write example to connect angular to Spring boot and print sum of values in table
+2) directives use of realtime projest
+3)how to configure microservices with Angular
+4) explain Hook life cycle methods
+5)binding in angular
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,75 @@
+1.Jdbc
+2.Stepes to Work with JDBC
+	1.Load the driver
+	2.Establish database connection via DriverManager
+	3.Issue the SQL Query via Connection
+	4.Process the result returned by sql query
+	5.Close all JDBC Connection
+3.Statements (Query)
+	1.Statick: if we not provide any values at run time is called as static query 
+	2.Dynamic: if we provide any values at run time is called as static query 
+
+4.Interfaces to execute query 
+	1.Statement :To execute static query
+	2.PrepareStatement :To execute dynamic query
+	3.Calleblestatement : To execute procedure or fuction
+		1.prepareCall(call procedure)
+	
+5.Database langwages:
+	1.DDL(boolean execute()): Executing the query with out any condition
+			1.Create table student(a,b,c);
+			2.drop table student;
+	
+	2.DML(int executeUpdate()):(Insert,Update,Delete)Based on condition is called
+			1.delete from student ;
+			
+	3.DRL(ResultSet executeQuery()): Retriving the data based on Condition
+			1.select * from student;
+
+6.Transaction Management:
+======================================================================================================
+
+JDBC Connection:
+
+=====================================================================================================
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import org.postgresql.Driver;
+
+public class JdbcConnection {
+
+	public static void main(String[] args) {
+		Connection con = null;
+		Statement stmt = null;
+		ResultSet result = null;
+
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Driver driver = new Driver();
+			DriverManager.registerDriver(driver);
+			String dburl = "jdbc:mysql://localhost:3306/mydatabase?user=user&password=P@ssW0rd";
+			con = DriverManager.getConnection(dburl);
+			String sql = "select * from departments";
+			stmt = con.createStatement();
+			result  =stmt.executeQuery(sql);
+			 while (result.next()) {
+	                int id = result.getInt("manager_id");
+	                String department_id = result.getString("department_id");
+	                String department_name = result.getString("department_name");
+	                System.out.println("ID: " + id + ", department_id: " + department_id+"department_name:"+department_name);
+	            }
+
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}
+
+	

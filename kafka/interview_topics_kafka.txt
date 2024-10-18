@@ -1,0 +1,4 @@
+1.What is KafKa.?
+	Kafka is a distributed platform for real-time data streaming, allowing you to publish, subscribe, and process records efficiently. It's known for high throughput, fault tolerance, and scalability.
+	
+2.

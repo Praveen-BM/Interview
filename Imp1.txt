@@ -1,0 +1,86 @@
+*****java*********
+1)what is generic in java*********
+2)what is custom exception,steps to create
+3)difference between string,StringBulder and BufferBuffer.
+4)difference between concurrentMap and SyncronizedMap
+5)internal working of HashMap
+6)try with respurce in java*********
+7)give the real-time example which you have been used in OOPs key features in projects.
+8)why string object is immutable, how we can create immuatble class in java stesps
+9)explain any two design patterns
+10)how to create singletone class and what is the use of singletone design pattern.
+11) throw and throws keyword 
+12)how many ways we can create thread object.
+13)difference between syncronized and volatile
+14) string constant pool;
+
+*****java8*********
+1) what is optional class and its use.
+2) streame api with example
+3) what is functional interface
+4)difference between predicate and cusumer functional interface
+5)what is lambda expression and to to achieve it.
+6)peek method
+7)default and sataic method in java8
+
+****SQL*********
+1) difference between Truncate and Delete
+2)joins and its types
+3)use of indexes.
+4)contrains in sql
+
+Queries:-
+=========
+1)find 2nd highest salary from table;
+2)find the employees who are at the highest salary in there respective departments.
+
+
+****Spring-Boot***
+1)spring Actuator
+2)what is spring cache
+3)how to Achieve Exception Handling in Spring-Boot.
+4)circular-depandancy in spring
+5)what is dispatcher servlet.
+6)dependancy injections in spring
+7) difference between jpa repository and curd repository.
+8) use of @Transactional Annotation
+9) session manager in hibernate
+10)difference between @pathVariable and @Requestparam
+11) how to achieve spring security explains steps.
+12) difference between native and Hql Queries.
+****Angualar******
+
+1) how to transfer data one component to another componet
+2)difference between observable and promise
+3)what is services,pipes,@decorators in angular
+4)what is binding and its types
+5)rout-gurds in angular
+6) explain life cycle Hook methods.
+
+****RestFul******
+1)HTTPS methods
+2)difference between @controller & @RestController Annotation.
+
+****Microservices
+1)what is Load balancer
+2)What is circuit Breaker
+3)steps to create service registry using eureka server
+
+1)programs:-
+1)write a program to merge two arrays into single aaray
+2)get employees who have 2nd highest salary using java8
+3)count the no.of occurence of word using java8
+4)sorting the employees based on there highest to lowest salary using java8
+5)find first non  repeated character in string.
+6)give 10 percente hike on emplyees based salry those have It department and print those employees.
+7)find avarage salary of male and female employees using java8
+7)print the 11 table without using loop.
+8)print the permutations of a given string input s1=>abcd
+output -->
+		abcd
+		abdc
+		acbd
+		acdb
+		adbc
+		adcb
+		...

@@ -1,0 +1,67 @@
+1.Lamda Expression: It is a annonumus fuction which is mainly used to write implementation for the Fuctional interface is called as
+
+2.Functional Interface:Which has only one abstract method within it is called as
+
+3.Consumer Interface (accept(arg a)):is a fuctional interface which has only one abstract method is called as accept(arg a) it will take input purform som oparetion on object with out returning any result
+		1."forEach()" internally uses pridicate method
+ 
+4.Predicate Interface test():it is used for conditional check "filter()" internally uses pridicate method
+
+5.Supplier Interface (get()):it will return velue "orElse()" internally uses Supplier Interface 
+
+6.Streams:are mainly used process Collection of object
+		Streams are squence of objects that support various method which can be pipelined to produce desired out putput
+		
+		1.why we use Streams
+				1.To achive Fuctional programming
+				2.to reduce mumber of line of code
+				3.bulk oparetion
+				
+7.ForEach():forEach() will internally uses Consumer inter faces whic inteke request and process it with out returning anything
+8.Filter():Filter() internally uses the pridicate method which will take request and do conditional check and return boolen as output
+
+9.Optional :It is a public final class and used to deal with NullPointerException in Java application.
+	1.Empty()It will Accept null value return empty
+	2.Of():it will not accept null value throw Null pointer Exception
+	3.OfNulleble():it will accepts both null as well as not null values if it is null return Empty object
+	
+10.MethodRefrence : it is user to refer method of fuctional interface
+		1.it is compact and easy form of lamdafuction
+		
+11.SingleTonClass : It is mainly useed to create Only on object this can be achived by declkaring Constructor as private
+
+		1.Stepes to create SingleTonClass:
+				1.Create Static datamember within single tone class
+				2.Create Private construtor which ristict to create object from out side of singletoneclass
+				3.Create static method which allow to create SingleTone Object
+				
+12.Serialization :It is a process of Converting object into a sequence of bytes which are be store into  disk
+
+13.Cloneable :It is used to create the exact copy of an object
+
+14.Functional Programming :Passing a fuction as an arguement to another fuction is called as a
+
+15.Marker Interface :A interface which has no mathod with in it is called as 
+		It is mainly used to provide some futures to the implemented classes by checking wether subclasses is implemented by marker interface or (subclass instenceOf markerinterface (Just like filtering purpose)
+
+16.Try with Resource : it is a Statement it is a try statement which declares on or more resources .resource is an Object that must be closed after finishing that programming
+the try with resources that enshores each resource has to close at the end of the program
+
+17.Concarent Hash Map : Concarent hash map is a part of concurency collection which is mainly used in mutithreaded environment to avoid Concurency modification exception
+
+18.How hash map works Internally:Hash map store the data in key value pair but internally the data is store in the form of node object.
+
+								 Node object are contains hashcode value key , value pair and address of next node
+								 
+								 Hash code is genareted by using hash code method and index value is disided by some logical oparetion based on hashcode value
+								 
+								 if two node will get some indext number then the second node address will be stored in node one
+								 
+								 if two hashcode value is same then that is called hash collision
+								 
+19.Runneble Interface:It is a one type of fuctional interface which has only one abstract method which is named as run();
+						which is mainly used to create a task that doesnot return any value whic can executed by thread
+						it will not throw any Exception
+						
+20.Calleble Interface:It is a one type of fuctional interface whic have only one absract methis that has named as call(). it is used to create a task which return value which can be execute by thread
+it will throw runtime exception

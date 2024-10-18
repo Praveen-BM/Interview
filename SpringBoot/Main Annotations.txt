@@ -1,0 +1,91 @@
+1.Spring boot
+=============
+1.Annotations
+----------------
+1.MainMethod Annotation
+-----------------------
+1.@SpringBootApplication
+	1.@EnnebleAutoConfigaretion
+	2.@ComponentScan
+	3.@Configaretion
+-------------------------
+2.StreoType Annotation
+-------------------------
+1.@Component
+	1.@Service
+	2.@Repository
+	3.@RestController/@Controller
+	4.@Entity
+--------------------------------
+3.SpringCoreRelated Annotation
+--------------------------------
+1.@Configaretion
+2.@Bean  (Method level)
+3.@Autowired
+------------------------------------
+4.Rest API Related Annotation
+---------------------------------
+1.@RestController
+2.@RequestMapping
+3.@GetMapping
+4.@PostMapping
+5.@PutMapping
+6.@DeleteMapping
+7.@RequestBody
+8.@PathVeriable
+9.@RequestParam
+
+(Used to validate request and return Exception as user redeble format){
+10.@ControllerAdvice(Used to handle Exception):It is a class level annotation whic is used for handle Exception Globally and it is responsible to recive and send and exception from controller class to perticular method which is declared with in it
+
+11@ExceptionHandler(Used to handle Exception):it is a method level annotation which handle the exception which is cam from the controller and return exception in user redeble format
+}
+
+12.@PathParam
+13.@Patch
+---------------------------------------------
+1.@Valid: Triggers validation on the request object (e.g., in controller methods).
+@PostMapping("/create")
+public void createUser(@Valid @RequestBody UserDTO user) { }
+
+2.@NotNull: Ensures the field is not null.
+@NotNull
+private String name;
+
+3.@Size: Validates the size of a field (e.g., string length).
+@Size(min = 2, max = 30)
+private String username;
+
+4.@Email: Validates if the field is a valid email format.
+@Email
+private String email;
+
+5.@Min and @Max: Ensures the value is within a specified range.
+@Min(18)
+private int age;
+---------------------------------------------------
+1.@Entity
+2.@Table
+3.@Column
+4.@Transaction
+--------------------------------------------
+5.Entity class relationship Annotation
+-----------------------------------------
+1.@OneToOne
+2.@OneToMany
+3.@ManyToOne
+==================================================================================================================
+1.Application.properties Related
+---------------------------------------
+1.Db Configuration
+2.Logger
+3.Authentication
+4.Swagger
+==============================================================
+6.Project Architecture
+=======================================
+Spring: A large, flexible framework for building Java applications, but you need to do a lot of manual setup and configuration.
+
+Spring Boot: A version of Spring that makes life easier by automatically setting things up for you, so you can start building apps quickly without much configuration. It’s especially good for creating stand-alone applications and microservices.
+
+

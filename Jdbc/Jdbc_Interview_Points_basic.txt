@@ -1,0 +1,11 @@
+1.Jdbc
+2.Stepes to Word with JDBC
+3.DriverManager
+4.DB URL
+5.Static Query
+6.Dynamic Query
+7.Statement
+8.Prepared Statement
+	1.execute();
+	2.executeQuery();
+	3.executeUpdate();

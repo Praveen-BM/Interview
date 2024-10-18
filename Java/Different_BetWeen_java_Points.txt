@@ -1,0 +1,71 @@
+1.Compareble And Comparator
+
+	Compareble						               Comparator
+	
+	1.It provide Single Sorting Sequenc           1.It provide multi sorting sequency           
+	i.e we can sort the collection on               i.e we can sort the collection based 
+	the basedon single element						mutiple element
+	
+	2.It effects original class					  2.It doesnot effect Original class
+	
+	3.provide CompareTo()						  3.provide Compar()
+	
+	4.precented in java.lang package			  4.precented in java.util pacakege
+	
+
+2.Hash Map And Concurent Hash Table
+
+	Hash Map									   Concurent Hash Mamp
+	
+	1.Methods are not syncronised				  1.Methods are syncronised
+	
+	2.not a thread safe							  2.Thread safe
+	
+	3.Fail-fash and throws an exception			  3.it is fail-safe and purforms 
+	During itaretion								itaretion by multi thread
+	
+	4.it allows null as key						  4.it will not allow null as key
+	
+3.Array List And Linked List
+
+	ArrayList									  Linked List
+
+	1.Array uses Dynamic Array 					  1.Linked List Internally uses 
+	internally										Dublilinked list
+	
+	2.Manupulation or modification is slower	  2.modification is faster than ArrayList
+	
+	3.it retrives the data fastly				  3.it retrives the data slowly than ArrayList
+	
+	4.impliments List							  4.implements both List and Queue
+	
+4.Hash Map And tree Map
+
+	HashMap										  TreeMap
+	
+	1.usese hash table 							  1.uses red block tree
+	
+	2.allows single null key					  2.not allow null key
+	
+	3.it uses equal() to compare keys			  3.it uses compareTo() to compare
+	
+5.Stream And Collection
+
+	Collection									  Stream										 
+	
+	1.to represent group of collection			 1.to purform bulk oparetion on object then we use Streams
+	as single entity then we should use 
+	Collection
+6.Filter And Map
+
+	Filter 										 Map
+	
+	1.it is used to fetch or filter				 1.
+	the object from the collection we use 
+	filter
+7.Map and Flat Map
+===================================
+		HashMap											Hashtable
+		Not synchronized (not thread-safe)				Synchronized (thread-safe)
+		Generally faster								Slower due to synchronization
+		Allows one null key and multiple null values	Does not allow null keys 

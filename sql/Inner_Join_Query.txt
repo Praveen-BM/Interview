@@ -1,0 +1,70 @@
+Basic Query:
+
+Write an INNER JOIN query to retrieve all employees and their respective department names from employees and departments tables, using department_id as the key.
+Filter with WHERE Clause:
+
+Ans:select e.name,d.department_name from employees e inner join departments d where e.department_id = d.department_id;
+
+How would you modify an INNER JOIN query to only return employees who work in the 'Sales' department?
+Multiple INNER JOINs:
+
+Ans:select e.employee_id,e.name,d.department_id,d.department_name from employees e inner join departments d where e.department_id = d.department_id and d.department_name='Sales';
+
+Write a query to join three tables: orders, customers, and products, to get the customer name, product name, and order date.
+Alias Usage:
+
+Ans:select * from orders r inner join customers c on r.customer_id=c.customer_id inner join products p on p.product_id=r.product_id; 
+
+How would you use table aliases in an INNER JOIN query to make it more readable? Provide an example.
+Handling Nulls:(not required)
+
+What happens if one of the tables in an INNER JOIN contains NULL values in the join column? Provide an example query and explain the result.
+Combining INNER JOIN with Aggregates:
+
+Write an INNER JOIN query to find the total sales amount for each product by joining sales and products tables.
+INNER JOIN with Subqueries:
+
+Provide an example of an INNER JOIN query that includes a subquery in the SELECT statement.
+Self-Join:
+
+What is a self-join, and how would you write an INNER JOIN query to find all employees who share the same manager?
+Performance Considerations:
+
+How can you optimize an INNER JOIN query for better performance? Provide specific strategies.
+Handling Duplicate Columns:
+
+If both joined tables have a column with the same name, how do you handle the selection of these columns in an INNER JOIN query? Provide an example.
+
+
+====================================================================
+Employees Table
+employee_id	name	department_id
+1	John Doe	101
+2	Jane Smith	102
+3	Mike Brown	101
+4	Emily Davis	103
+
+Departments Table
+department_id	department_name
+101	Sales
+102	HR
+103	IT
+
+Orders Table
+order_id	customer_id	product_id	order_date
+1	201	301	2024-01-15
+2	202	302	2024-01-16
+3	201	303	2024-01-17
+4	203	301	2024-01-18
+
+Customers Table
+customer_id	customer_name
+201	Alice Green
+202	Bob White
+203	Carol Black
+
+Products Table
+product_id	product_name	price
+301	Laptop	1200
+302	Mouse	20
+303	Keyboard	50

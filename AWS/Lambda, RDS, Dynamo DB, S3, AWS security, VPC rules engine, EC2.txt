@@ -1,0 +1,13 @@
+1. Lambda: AWS Lambda is a serverless computing service that lets you run code without managing servers. You just upload your code, and Lambda runs it in response to triggers (like file uploads to S3 or HTTP requests). You only pay for the compute time your code uses.
+
+2. RDS (Relational Database Service): Amazon RDS is a managed relational database service. It supports multiple database engines (like MySQL, PostgreSQL, Oracle, and SQL Server) and handles common database tasks such as backups, patching, scaling, and replication.
+
+3. DynamoDB: Amazon DynamoDB is a fully managed NoSQL database service. It’s designed for fast, flexible, and scalable data access, handling large volumes of reads and writes with low latency, making it ideal for real-time applications.
+
+4. S3 (Simple Storage Service): Amazon S3 is a scalable object storage service that lets you store and retrieve large amounts of data at any time. It's used for storing files, backups, data archives, and more, with features like versioning and encryption.
+
+5. AWS Security: AWS provides various security features, like identity and access management (IAM), encryption, multi-factor authentication (MFA), and security monitoring to protect your resources and data in the cloud.
+
+6. VPC (Virtual Private Cloud) Rules Engine: A VPC allows you to define a virtual network within AWS. The VPC rules engine (using security groups and network access control lists) controls inbound and outbound traffic to your resources, ensuring secure network communications.
+
+7. EC2 (Elastic Compute Cloud): Amazon EC2 provides scalable virtual servers in the cloud. You can launch instances (virtual machines) with different configurations and pay based on usage. EC2 is used for running applications, hosting websites, or processing data.

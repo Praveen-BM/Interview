@@ -1,0 +1,47 @@
+Name & Position:
+My name is Praveen B M, and I have over 3 years of experience as a Software Engineer.
+
+Experience & Skills:
+
+I specialize in Java and Spring Boot for web application development and maintenance.
+I have experience in creating and consuming REST API services, working with MySQL databases, and using version control tools like Git and Bitbucket.
+
+Work Highlights:
+
+At Posidex Technologies, I developed an automated data source module and enhanced payment processes for efficiency.
+I worked on a project called Jana_Migration, where I implemented key functions like findCustomer and getMatches to meet client needs.
+
+Education:
+I hold a Bachelor’s Degree in Mechanical Engineering from Visveswaraiah Technological University (VTU).
+
+Hobbies:
+In my free time, I enjoy writing song lyrics, traveling, and listening to music.
+
+
+===================================================================================================================================
+Hello, my name is Praveen. I completed my engineering degree in 2019 and have over 3 years of experience as a backend developer. My most recent position was at Posidex, where I worked on several key projects, including the implementation of data source modules, payment modules, and maker-checker modules. I also developed Java-based utilities and implemented numerous REST APIs.
+
+Recently, I started learning frontend technologies such as HTML, CSS, and Angular to broaden my skill set. My goal is to secure a position at a reputable company where I can further enhance my technical and analytical skills.
+
+Hobbies:
+
+In my free time, I enjoy traveling and writing lyrics for songs.
+
+Family Background:
+
+We are a family of five. My father is a retired ASI, and my mother is a homemaker. I have two siblings—a younger brother who works in a bank, and a younger sister who recently got married.
+
+==============================================================
+Hi sir my name is praveen i have 3+ years of experience as a backend developper
+posidex is my last organisetion which is a product based company 
+it will collect all negative costomer details which are involed in criminal activities ,terarist activities and froud activities 
+and provide the details when client request matched in negative customer details
+for this i have implemented datasource module where user can upload their own negative customer details and aslo i have implemented 
+payment related module like maker and checked modules .whenever client do payments make collect the details and set to the checker .checker will collect the payment details and discussed with finance manager if everythis is good then checker approves the payment details also i have implemented few java based utils like mail notification and seduler related utils as i mentioned in resume 
+
+i have been worked on tecknolodgys like java spring boot mysql and also for version control i used git
+recently i have started learning frount end tecknolodgys like html css typescript and angular
+
+comming to my hobbies in my free time i enyoyed writing lyrics for songs travelling and listaning music
+
+

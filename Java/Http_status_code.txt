@@ -1,0 +1,22 @@
+1. 2xx Success
+200 OK: The request was successful. Used when everything goes as expected.
+201 Created: The request has been fulfilled, and a new resource has been created (typically used after a POST request).
+204 No Content: The request was successful, but no content is returned (often used after a successful DELETE).
+
+2. 3xx Redirection
+301 Moved Permanently: The resource has been moved to a new URL permanently.
+302 Found: The resource has been temporarily moved to a different URL.
+304 Not Modified: The resource has not been modified since the last request, often used in caching.
+
+3. 4xx Client Error
+400 Bad Request: The request was malformed or invalid.
+401 Unauthorized: Authentication is required, or the provided credentials are invalid.
+403 Forbidden: The client doesn't have permission to access the requested resource.
+404 Not Found: The requested resource doesn't exist on the server.
+405 Method Not Allowed: The HTTP method used is not allowed for the resource (e.g., using GET instead of POST).
+409 Conflict: There is a conflict in the request, often used during updates or creation when there are resource conflicts.
+
+5. 5xx Server Error
+500 Internal Server Error: A generic server error occurred.
+502 Bad Gateway: The server, while acting as a gateway or proxy, received an invalid response from an upstream server.
+503 Service Unavailable: The server is temporarily unavailable, usually due to maintenance or overload.

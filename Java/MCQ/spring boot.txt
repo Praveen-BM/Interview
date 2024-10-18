@@ -1,0 +1,160 @@
+Spring Boot Basic MCQs
+Which of the following annotations is used to mark the main class of a Spring Boot application?
+
+A) @SpringBootApplication
+B) @Component
+C) @EnableAutoConfiguration
+D) @Configuration
+Answer: A
+
+In Spring Boot, which file is commonly used to configure application settings?
+
+A) application.xml
+B) app.properties
+C) application.properties
+D) settings.json
+Answer: C
+
+What is the default embedded server used by Spring Boot?
+
+A) Jetty
+B) Tomcat
+C) Undertow
+D) WebLogic
+Answer: B
+
+Which annotation in Spring Boot is used to enable scheduling of tasks?
+
+A) @EnableScheduling
+B) @Schedule
+C) @EnableTask
+D) @EnableJobs
+Answer: A
+
+How can you run a Spring Boot application on a custom port?
+
+A) Modify server.port property in application.properties.
+B) Modify server.host property in application.properties.
+C) Use @ComponentScan annotation.
+D) Use the @RestController annotation.
+Answer: A
+
+Which annotation in Spring Boot is used to expose REST APIs?
+
+A) @RestService
+B) @RestController
+C) @Service
+D) @Controller
+Answer: B
+
+What is the primary benefit of using Spring Boot over the standard Spring Framework?
+
+A) It provides built-in logging.
+B) It eliminates the need for XML configuration and provides auto-configuration features.
+C) It replaces Hibernate as the ORM framework.
+D) It forces the use of Maven for dependency management.
+Answer: B
+
+Which of the following annotations is used to scan for Spring-managed components in a Spring Boot application?
+
+A) @ComponentScan
+B) @Bean
+C) @Service
+D) @Repository
+Answer: A
+
+How can you exclude a class from being auto-configured in Spring Boot?
+
+A) Use @SpringBootApplication(exclude = ClassName.class)
+B) Use @EnableAutoConfiguration(exclude = ClassName.class)
+C) Both A and B
+D) Use @ComponentScan(exclude = ClassName.class)
+Answer: C
+
+Which of the following dependencies is required for building a Spring Boot web application?
+
+A) spring-boot-starter-data-jpa
+B) spring-boot-starter-web
+C) spring-boot-starter-aop
+D) spring-boot-starter-security
+Answer: B
+
+How can you disable the default web server (Tomcat) in a Spring Boot application?
+
+A) Set spring.main.web-application-type=none in application.properties.
+B) Remove the @SpringBootApplication annotation.
+C) Delete the pom.xml file.
+D) Use the @RestController annotation.
+Answer: A
+
+Which of the following is the correct way to inject a dependency in Spring Boot?
+
+A) @Inject
+B) @Resource
+C) @Autowired
+D) @Configuration
+Answer: C
+
+Which annotation in Spring Boot is used to create and manage RESTful web services?
+
+A) @Controller
+B) @RestController
+C) @Service
+D) @Component
+Answer: B
+
+What does @SpringBootApplication internally include?
+
+A) @Configuration, @EnableAutoConfiguration, and @ComponentScan
+B) @Controller, @ComponentScan, and @Service
+C) @RestController, @EnableCaching, and @EnableJpaRepositories
+D) @Service, @Bean, and @Component
+Answer: A
+
+Which annotation is used to create a singleton bean in Spring Boot?
+
+A) @Service
+B) @Component
+C) @Bean
+D) @Configuration
+Answer: C
+
+In Spring Boot, which annotation can be used to handle exceptions globally in a REST API?
+
+A) @RestControllerAdvice
+B) @ControllerAdvice
+C) @ExceptionHandler
+D) @GlobalExceptionHandler
+Answer: A
+
+Which of the following starters is used to add Spring Boot actuator functionality?
+
+A) spring-boot-starter-data-jpa
+B) spring-boot-starter-actuator
+C) spring-boot-starter-aop
+D) spring-boot-starter-test
+Answer: B
+
+What is the purpose of Spring Boot's @EnableAutoConfiguration annotation?
+
+A) It disables the auto-configuration feature of Spring Boot.
+B) It tells Spring Boot to automatically configure your application based on the dependencies present.
+C) It forces the application to use XML-based configuration.
+D) It allows manual bean configuration.
+Answer: B
+
+How do you run a Spring Boot application from the command line using Maven?
+
+A) mvn start
+B) mvn run
+C) mvn spring-boot:run
+D) mvn exec:java
+Answer: C
+
+What is the default logging level in Spring Boot?
+
+A) ERROR
+B) INFO
+C) DEBUG
+D) WARN
+Answer: B

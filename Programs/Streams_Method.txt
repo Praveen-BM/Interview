@@ -1,0 +1,100 @@
+Creating a Stream
+Streams can be created from various data sources, including collections, arrays, and I/O channels. Here are a few examples:
+
+
+// From a collection
+List<String> list = Arrays.asList("a", "b", "c");
+Stream<String> streamFromList = list.stream();
+
+// From an array
+String[] array = {"a", "b", "c"};
+Stream<String> streamFromArray = Arrays.stream(array);
+
+// From values
+Stream<String> streamFromValues = Stream.of("a", "b", "c");
+Commonly Used Stream Methods
+Intermediate Operations
+These operations return a new stream and are typically used to transform or filter the data.
+
+filter(Predicate<? super T> predicate): Filters elements based on a condition.
+
+
+List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+Stream<Integer> evenNumbers = numbers.stream().filter(n -> n % 2 == 0);
+map(Function<? super T, ? extends R> mapper): Transforms each element to another form.
+
+
+List<String> names = Arrays.asList("john", "jane", "doe");
+Stream<String> uppercasedNames = names.stream().map(String::toUpperCase);
+flatMap(Function<? super T, ? extends Stream<? extends R>> mapper): Transforms each element to a stream and flattens the result.
+
+
+List<List<String>> listOfLists = Arrays.asList(
+    Arrays.asList("a", "b"),
+    Arrays.asList("c", "d")
+);
+Stream<String> flatStream = listOfLists.stream().flatMap(List::stream);
+distinct(): Removes duplicate elements.
+
+
+List<Integer> numbers = Arrays.asList(1, 2, 3, 2, 4, 3);
+Stream<Integer> distinctNumbers = numbers.stream().distinct();
+sorted(): Sorts elements in natural order. You can also provide a custom comparator.
+
+
+List<String> names = Arrays.asList("john", "jane", "doe");
+Stream<String> sortedNames = names.stream().sorted();
+Terminal Operations
+These operations produce a result or a side effect and close the stream.
+
+forEach(Consumer<? super T> action): Performs an action for each element.
+
+
+List<String> names = Arrays.asList("john", "jane", "doe");
+names.stream().forEach(System.out::println);
+collect(Collector<? super T, A, R> collector): Collects elements into a collection or another data structure.
+
+
+List<String> names = Arrays.asList("john", "jane", "doe");
+List<String> list = names.stream().collect(Collectors.toList());
+reduce(BinaryOperator<T> accumulator): Combines elements to produce a single result.
+
+
+List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+Optional<Integer> sum = numbers.stream().reduce(Integer::sum);
+count(): Returns the number of elements in the stream.
+
+
+List<String> names = Arrays.asList("john", "jane", "doe");
+long count = names.stream().count();
+anyMatch(Predicate<? super T> predicate), allMatch(Predicate<? super T> predicate), noneMatch(Predicate<? super T> predicate): Check if any, all, or none of the elements match a given predicate.
+
+
+List<String> names = Arrays.asList("john", "jane", "doe");
+boolean hasJohn = names.stream().anyMatch(name -> name.equals("john"));
+Example Usage
+Here's a complete example that demonstrates how to use some of these methods together:
+
+
+import java.util.*;
+import java.util.stream.*;
+
+public class StreamExample {
+    public static void main(String[] args) {
+        List<String> names = Arrays.asList("john", "jane", "doe", "jane");
+
+        // Convert all names to uppercase, remove duplicates, sort, and collect to a list
+        List<String> processedNames = names.stream()
+                                           .map(String::toUpperCase)
+                                           .distinct()
+                                           .sorted()
+                                           .collect(Collectors.toList());
+
+        System.out.println(processedNames);
+    }
+}
+Output:
+
+csharp
+
+[DOE, JANE, JOHN]

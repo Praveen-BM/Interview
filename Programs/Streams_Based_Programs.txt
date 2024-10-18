@@ -1,0 +1,90 @@
+1.Write a program to create a stream from a list and print each element.
+ANS:stringList.stream().forEach(ref->System.out.println("hellow "+ref));
+
+2.Write a program to filter a stream to include only even numbers.
+ANS:numList.stream().filter(ref->ref%2==0).forEach(System.out::println);
+
+3.Write a program to convert all strings in a list to uppercase using streams.
+ANS:stringList.stream().forEach(ref->System.out.println(ref.toUpperCase())); ;
+
+4.Write a program to square each number in a list using streams.
+Ans:numList.stream().forEach(ref->System.out.println(ref*ref+" Is the squery root of "+ref));
+
+5.Write a program to flatten a list of lists using streams.
+Ans:stringListOfLists.stream().flatMap(List::stream).collect(Collectors.toList()).forEach(System.out::println);;
+
+
+6.Write a program to sort a list of strings using streams.
+numList.stream().sorted().forEach(System.out::println);
+
+7.Write a program to sort a list of custom objects by a specific field using streams.
+studentList.stream().sorted(Comparator.comparing(Student::getAge)).forEach(System.out::println);
+
+8.Write a program to find the maximum number in a list using streams.
+Integer integer = numList.stream().max(Integer::compareTo).get() ;
+
+9.Write a program to find the minimum number in a list using streams.
+Integer integer = numList.stream().min(Integer::compareTo).get() ;
+
+10.Write a program to sum all elements in a list using streams.
+Integer integer = numList.stream().mapToInt(Integer::intValue).sum() ;
+
+11.Write a program to count the number of elements in a list using streams.
+long integer = numList.stream().count() ;
+
+Write a program to generate an infinite stream of random numbers and print the first 10.
+12.Write a program to limit the number of elements processed in a stream.
+List<Integer> collect = numList.stream().limit(5).collect(Collectors.toList());
+
+13.Write a program to skip the first n elements of a stream.
+numList.stream().skip(1).toList().forEach(System.out::println);
+
+14.Write a program to concatenate two streams.
+ Stream<Integer> stream1 = Stream.of(1, 2, 3);
+ Stream<Integer> stream2 = Stream.of(4, 5, 6);
+Stream<Integer> concatenatedStream = Stream.concat(stream1, stream2);
+
+15.Write a program to collect stream elements into a list.
+List<Integer> collectedList = numList.stream().collect(Collectors.toList());
+
+16.Write a program to collect stream elements into a set.
+Set<Integer> collect = numList.stream().collect(Collectors.toSet());
+
+17.Write a program to partition a list of integers into even and odd using streams.
+ Map<Boolean, List<Integer>> collect = numList.stream().collect(Collectors.partitioningBy(ref->ref%2==0));
+
+		 List<Integer> evnNum = collect.get(true);
+		 List<Integer> oddNum =collect.get(false);
+		 
+Write a program to group a list of strings by their length using streams.
+Write a program to join a list of strings into a single string separated by commas using streams.
+Write a program to create a parallel stream from a list and print each element.
+Write a program to use the reduce() method to find the product of all elements in a list.
+Write a program to find any element in a stream that matches a given predicate.
+Write a program to check if all elements in a stream match a given predicate.
+Write a program to check if any element in a stream matches a given predicate.
+Write a program to check if no elements in a stream match a given predicate.
+Write a program to convert a stream of strings to a map where the key is the string and the value is its length.
+Write a program to use the peek() method to debug a stream processing pipeline.
+Write a program to create a stream of prime numbers.
+Write a program to find the first non-repeated character in a string using streams.
+Write a program to find the most frequent character in a string using streams.
+Write a program to find the longest string in a list using streams.
+Write a program to sort a list of strings in reverse order using streams.
+Write a program to calculate the average of a list of integers using streams.
+Write a program to remove duplicate elements from a list using streams.
+Write a program to create a stream from an array and print each element.
+Write a program to convert a stream to an array.
+Write a program to create an infinite stream of natural numbers and print the first 10.
+Write a program to generate a stream of Fibonacci numbers.
+Write a program to calculate the factorial of a number using streams.
+Write a program to use the collect() method to group a list of objects by a specific field.
+Write a program to use the collect() method to partition a list of objects by a boolean condition.
+Write a program to use the collect() method to join a list of strings into a single string with a delimiter.
+Write a program to create a stream from a file and print each line.
+Write a program to find the sum of squares of a list of integers using streams.
+Write a program to find the second highest number in a list using streams.
+Write a program to find the n-th Fibonacci number using streams.
+Write a program to create a stream from a range of integers and print each element.
+Write a program to filter and collect only unique strings from a list.
+Write a program to use the Stream.builder() to create a stream and print its elements.

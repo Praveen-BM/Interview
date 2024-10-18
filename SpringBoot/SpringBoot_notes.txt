@@ -1,0 +1,60 @@
+1.@SpringBootApplication :it is a one type of annotation whic contain 3 main Annotations which are called
+	
+	1.@EnnebleAutoConfigaretion : it is used for jar dependency related configaretion
+	2.@ComponentScan :it is a class level annotation whic is used for component related configaretion
+	3.@Configaretion :it is a class level annotation which provide bean related configaretion which are declare with in it
+	
+2.@Bean: It is a method level annotation which is declared with configaretion class and it is used for create bean for the class
+
+3.@Component: it is used to detect and register and component class autometically in to spring boot application
+
+4.Spring Boot Actuator is a powerful module that provides production-ready features to monitor and manage Spring Boot applications. It exposes endpoints that help you gather metrics, monitor the health of your application, view environment information, and much more, without writing additional code.
+
+5.Spring Caching: Improves performance by caching the results of method calls to avoid repeated calculations or database queries.
+How: Uses annotations to manage caching.
+Key Annotations:
+@Cacheable: Caches the result of a method.
+@CachePut: Updates the cache with a new result.
+@CacheEvict: Removes entries from the cache.
+
+6.How to Achive Exception handling in spring boot
+
+(Used to validate request and return Exception as user redeble format to avoid 400 and 404){
+		1.@ControllerAdvice(Used to handle Exception):It is a class level annotation whic is used for handle Exception Globally and it is responsible to recive and send and exception from controller class to perticular method which is declared with in it
+
+		2.@ExceptionHandler(Used to handle Exception):it is a method level annotation which handle the exception which is cam from the controller and return exception in user redeble format
+}
+
+7.Circular Dependency in Spring occurs when two or more beans depend on each other directly or indirectly, creating a loop that makes it impossible for Spring to instantiate the beans. This can lead to issues during the bean creation process, as Spring may not know which bean to instantiate first.
+
+	Can be resolved using setter injection, the @Lazy annotation, or by refactoring code to reduce dependencies.
+	
+8.DispatcherServlet:
+ DispatcherServlet is crucial for managing the request-response lifecycle in a Spring MVC application.
+ 
+9.Dependency Injection in Spring
+
+	1.Constructor Injection: Recommended method. Dependencies are provided through the constructor, ensuring immutability and required dependencies. It makes testing easier and clarifies class requirements.
+
+	2.Setter Injection: Used for optional dependencies. Allows changing dependencies after object creation but can lead to inconsistent states.
+
+	3.Field Injection: Not recommended. It’s convenient but hides dependencies, complicates testing, and breaks encapsulation.
+
+	Summary:
+	Best Practice: Use constructor injection for required dependencies, setter injection for optional ones, and avoid field injection.
+	
+10.@Transactional Annotation
+
+	1.Purpose: Used to manage transaction boundaries in Spring applications. It ensures that a series of operations either complete successfully or roll back in case of an error.
+	
+11.session manager in hibernate
+	In Hibernate is used for managing the lifecycle of Session objects, which are used to interact with the database.
+	
+12.how to achieve spring security explains steps.
+	1.Add Spring Security Dependency.
+	2.Create a Security Configuration Class to define security rules.
+	3.Implement UserDetailsService to load user data.
+	4.Configure Authentication with a password encoder.
+	5.Run the Application to see security in action.
+13.what is agile methodology
+	it is Sytamatic approch where The Application is continueous updation based on customer feed back to delivering high-quality products incrementally
